@@ -1,25 +1,22 @@
+import React, {Component} from 'react';
+//let React = require('react'); 
+//let Component = React.Component;
 import logo from './logo.svg';
+//let logo = require('./logo.svg');
 import './App.css';
+import Header from './Components/Header/Header.jsx'
 
-function App() {
+class App extends Component {
+render() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header/>
+        <Header/>
+
       </header>
     </div>
   );
 }
-
+}
 export default App;
